@@ -7,4 +7,4 @@ You can use promo code for 25% off:
 
 [boot.dev/teej](https://boot.dev/teej)
 
-- See [C Course Overview.md](./C Course Overview.md) for current status
+- See [C Course Overview](./C\ Course\ Overview.md) for current status
