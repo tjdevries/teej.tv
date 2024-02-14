@@ -1,0 +1,2 @@
+- https://old.reddit.com/r/rust/comments/1ak5zid/borrow_checker_is_exclusively_a_strength_of_the/
+- https://old.reddit.com/r/rust/comments/1akn2ff/what_are_rust_programmers_missing_out_on_by_not/
