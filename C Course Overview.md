@@ -1,20 +1,28 @@
-Target Audience:
+## Target Audience:
 - Boot.dev user
 - They've done:
 	- Some python
 	- basic data structures / algos
 	- some stuff w/ the terminal
 	- a few smaller personal projects
+	- (This course is planned to be between the JS and Go Courses)
 - Will be compiling almost exclusively in browser
 	- So focused more on language, rather than local computer setup/build/etc
+	- See more about why in the Goals section
 
-My expectation is that most of the students will never write C again after the course and almost certainly not write C professionally.
 
-My Goal for the course:
+NOTE: My expectation is that most of the students will never write C again after the course and almost certainly not write C professionally.
+
+## Goals for the Course
+
+Overarching Idea: I want to **expose** them to C, but I don't need them to **master** C
+
 - This is not:
 	- a "Everything you need to be a professional C developer"
 	- a "Everything you need to build a C application"
 		- This includes compiler flags, build systems, etc
+	- a "You now can read random C projects easily"
+		- There are a lot of "C idioms" that are regularly used that are powerful but do not lend themselves to easy reading.
 - The primary goals are:
 	- You get a taste of a non-gc language (i.e. memory UN-safety)
 	- (The projects give you) a basic understanding of how a garbage collector works
@@ -27,50 +35,77 @@ My Goal for the course:
 	 - Things like conditional compilation
 		 - Don't care about OS specific stuff or managing that kind of complexity in this course
 	 
-Next steps after the course:
+## Next steps after the course:
 - You either take:
 	- Go course
 	- Rust course
 	- (or both)
 
-- Course Outline:
-	- History of C / What's the point?
-		- Motivating example and information about the course
-		- You're definitely using stuff that's written in C right now!
-		- Learning C can help you better understand many programming concepts more explicitly
-		- "You'll understand better how computers work"
-			- This one i'm always a bit hesitant on, because C is also kind of lying to you :)
-			- Cache hits, pipelining, etc
-			- Maybe better: "You'll understand better how computer memory works, regarding programming languages"
-		- After finishing this course, some potential projects you could try on your own would be:
-			- TODO
+## Course Outline:
+- History of C / What's the point?
+	- Motivating example and information about the course
+	- You're definitely using stuff that's written in C right now!
+	- Learning C can help you better understand many programming concepts more explicitly
+	- "You'll understand better how computers work"
+		- This one i'm always a bit hesitant on, because C is also kind of lying to you :)
+		- Cache hits, pipelining, etc
+		- Maybe better: "You'll understand better how computer memory works, regarding programming languages"
+	- After finishing this course, some potential projects you could try on your own would be:
+		- TODO
 
-	- Some basic words:
-		- Compiled
-		- Statically type
-		- Manual Memory Management (a.k.a no GC)
-	- int main() {...}
-	- Simple types
-		- int
-		- char
-	- Structs
-		- Thinking it's nice to do this before pointers, because then we can show how you would update one and contrast that with something like javascript, where you're always passing the object "by reference".
-		- Pass by reference, pass by value
-			- Are there better C terms for this?
-		- `sizeof(T)`
-		- Padding / alignment
-	- Pointers
-	- Arrays
-	- Strings?
-		- Would be good to give concrete example, but probably need to show both Pointers & Arrays first before we can get there
-		- Definitely want to show some of the stdlib string functions and some easy things that can make them fail
-	- Pointer-Pointers (not sure if there is better name for this idea)
-	- Stack / Heap
-		- Do we introduce this concept before we introduce malloc/free?
-		- Perhaps we introduce them at the same time
-	- Conclusion:
-		- Here's some things you could explore more if you liked this course
-			- Multithreading (if you don't value your sanity)
+- Some basic words:
+	- Compiled
+	- Statically type
+	- Manual Memory Management (a.k.a no GC)
+- Structure of a simple program
+	- `int main() {...}`
+- Simple types
+	- int
+	- char
+- Control flow
+	- if statements, loops, functions, return
+	- switch/case statements
+
+```python
+if something():
+  stuff()
+```
+
+```c
+if (something()) {
+
+}
+```
+- Function Syntax
+- Structs
+	- Thinking it's nice to do this before pointers, because then we can show how you would update one and contrast that with something like javascript, where you're always passing the object "by reference".
+		- IBM uses "pass-by-pointer" instead of "pass-by-reference"
+		- https://www.ibm.com/docs/en/xl-c-aix/13.1.2?topic=calls-pass-by-pointer
+	- Pass by reference, pass by value
+		- Are there better C terms for this?
+	- `sizeof(T)`
+	- Padding / alignment
+- Intro to Pointers
+- Arrays
+- Strings
+	- Would be good to give concrete example, but probably need to show both Pointers & Arrays first before we can get there
+	- Definitely want to show some of the stdlib string functions and some easy things that can make them fail
+- Pointer-Pointers (not sure if there is better name for this idea)
+- Stack / Heap
+	- Do we introduce this concept before we introduce malloc/free?
+	- Perhaps we introduce them at the same time?
+- Error Handling
+	- How to do "try-catch" in C?
+		- There is no language feature for this
+	- `goto cleanup`
+- Advanced Structs
+	- `enum`
+	- `union`
+- Implementing the refcount GC
+- Implementing the mark-and-sweep GC
+- Conclusion:
+	- Here's some things you could explore more if you liked this course
+		- Multithreading (if you don't value your sanity)
 
 
 - Open Questions:
