@@ -64,6 +64,7 @@ Overarching Idea: I want to **expose** them to C, but I don't need them to **mas
 	- char
 - Control flow
 	- if statements, loops, functions, return
+		- Should cover some ideas about scoping
 	- switch/case statements
 
 ```python
@@ -78,19 +79,41 @@ if (something()) {
 ```
 - Function Syntax
 - Structs
+	- Basic Syntax
+	- Initializers
+		- Positional
+		- Designated
+		- `{0}` <- zero initialized
+	- `typedef` as well
+	- `sizeof(T)`
+	- Padding / alignment
+- Intro to Pointers
+- Structs
 	- Thinking it's nice to do this before pointers, because then we can show how you would update one and contrast that with something like javascript, where you're always passing the object "by reference".
 		- IBM uses "pass-by-pointer" instead of "pass-by-reference"
 		- https://www.ibm.com/docs/en/xl-c-aix/13.1.2?topic=calls-pass-by-pointer
 	- Pass by reference, pass by value
 		- Are there better C terms for this?
-	- `sizeof(T)`
-	- Padding / alignment
-- Intro to Pointers
 - Arrays
-- Strings
-	- Would be good to give concrete example, but probably need to show both Pointers & Arrays first before we can get there
+	- Fixed-size, at compile time
+	- `int hello[5] = {1, 2, 3, 4, 5}`
+		 - What happens if you access `hello[6]`?
+		 - What happens if you access `hello[5]`?
+		 - What happens if we try to set those?
+	 - (better) `int hello[] = {1, 2, 3, 4, 5}`
+- Strings (char array + null terminator)
+	- `char greeting[] = "hello, world!";`
+	- `char greeting[x] = "hello, world!";`
+		- STOP: What do you think `x` should be? :)
+	- `printf("%s", greeting);`
 	- Definitely want to show some of the stdlib string functions and some easy things that can make them fail
+		- `strncopy`
+	- Overflows
+		- `char greeting[256]`
+		- Someone inputs a 300 character string... uh oh :)
+		- memcpy into something that's not big enough
 - Pointer-Pointers (not sure if there is better name for this idea)
+	- Sometimes called 2-star pointers
 - Stack / Heap
 	- Do we introduce this concept before we introduce malloc/free?
 	- Perhaps we introduce them at the same time?
@@ -101,6 +124,7 @@ if (something()) {
 - Advanced Structs
 	- `enum`
 	- `union`
+- Reallocating
 - Implementing the refcount GC
 - Implementing the mark-and-sweep GC
 - Conclusion:
@@ -119,6 +143,9 @@ if (something()) {
 	- gdb / valgrind / etc
 	- static / globals / const
 	- 10 rules of nasa
+	- bitwise operations
+	- How to read C types
+		- https://c-faq.com/decl/spiral.anderson.html
 
 
 
@@ -143,3 +170,10 @@ Notes:
 	- It's a low-level language because you have to think about memory management, you don't have as many language features as other languages, no objects, etc
 	- But it's a high-level language in the sense of what it replaces -- writing assembly directly
 
+
+
+```c
+if ((((x)))) {
+
+}
+```
