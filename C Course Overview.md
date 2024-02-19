@@ -146,6 +146,8 @@ if (something()) {
 	- bitwise operations
 	- How to read C types
 		- https://c-faq.com/decl/spiral.anderson.html
+	- RSS / virtual / reserved memory
+	- Talk about different types likes size_t, intpr_t, etc
 
 
 
