@@ -1,0 +1,9 @@
+- Motivating example and information about the course
+- You're definitely using stuff that's written in C right now!
+- Learning C can help you better understand many programming concepts more explicitly
+- "You'll understand better how computers work"
+	- This one i'm always a bit hesitant on, because C is also kind of lying to you :)
+	- Cache hits, pipelining, etc
+	- Maybe better: "You'll understand better how computer memory works, regarding programming languages"
+- After finishing this course, some potential projects you could try on your own would be:
+	- TODO

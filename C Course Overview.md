@@ -17,6 +17,7 @@ NOTE: My expectation is that most of the students will never write C again after
 
 Overarching Idea: I want to **expose** them to C, but I don't need them to **master** C
 
+
 - This is not:
 	- a "Everything you need to be a professional C developer"
 	- a "Everything you need to build a C application"
@@ -42,51 +43,17 @@ Overarching Idea: I want to **expose** them to C, but I don't need them to **mas
 	- (or both)
 
 ## Course Outline:
-- History of C / What's the point?
-	- Motivating example and information about the course
-	- You're definitely using stuff that's written in C right now!
-	- Learning C can help you better understand many programming concepts more explicitly
-	- "You'll understand better how computers work"
-		- This one i'm always a bit hesitant on, because C is also kind of lying to you :)
-		- Cache hits, pipelining, etc
-		- Maybe better: "You'll understand better how computer memory works, regarding programming languages"
-	- After finishing this course, some potential projects you could try on your own would be:
-		- TODO
 
-- Some basic words:
-	- Compiled
-	- Statically type
-	- Manual Memory Management (a.k.a no GC)
-- Structure of a simple program
-	- `int main() {...}`
-- Simple types
-	- int
-	- char
-- Control flow
-	- if statements, loops, functions, return
-		- Should cover some ideas about scoping
-	- switch/case statements
+1. [[Goals of the Course]]
+2. [[History of C]]
+3. [[Overview of C]]
+4. [[Structure of a Simple Program]]
+5. [[Simple Types]]
+6. [[Control Flow]]
+7. [[Operators and Expressions]]
+8. [[Simple Functions]]
+9. [[Structs]]
 
-```python
-if something():
-  stuff()
-```
-
-```c
-if (something()) {
-
-}
-```
-- Function Syntax
-- Structs
-	- Basic Syntax
-	- Initializers
-		- Positional
-		- Designated
-		- `{0}` <- zero initialized
-	- `typedef` as well
-	- `sizeof(T)`
-	- Padding / alignment
 - Intro to Pointers
 - Structs
 	- Thinking it's nice to do this before pointers, because then we can show how you would update one and contrast that with something like javascript, where you're always passing the object "by reference".
@@ -148,6 +115,9 @@ if (something()) {
 		- https://c-faq.com/decl/spiral.anderson.html
 	- RSS / virtual / reserved memory
 	- Talk about different types likes size_t, intpr_t, etc
+	- `typedef unsigned char byte`
+		- Using typedef outside of structs
+		- Could be good as an example compared to `#define`
 
 
 
