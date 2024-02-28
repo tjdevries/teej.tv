@@ -1,10 +1,10 @@
 
 - Basic Syntax
-	- [[structs_basic_syntax.c]]
+	- [[examples/structs_basic_syntax.c|structs_basic_syntax]]
 	- However, kind of annoying to always have to say "struct coordinate" instead of how we have been able to say "int" or "float" normally.
 
 - `typedef`
-	- [[structs_typedef_example.c]]
+	- [[examples/structs_typedef_example.c|structs_typedef_example]]
 	- Now we can use `coordinate_t` instead of always typing `struct coordinate`
 
 - Initializers

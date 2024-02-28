@@ -44,15 +44,15 @@ Overarching Idea: I want to **expose** them to C, but I don't need them to **mas
 
 ## Course Outline:
 
-1. [[Goals of the Course]]
-2. [[History of C]]
-3. [[Overview of C]]
-4. [[Structure of a Simple Program]]
-5. [[Simple Types]]
-6. [[Control Flow]]
-7. [[Operators and Expressions]]
-8. [[Simple Functions]]
-9. [[Structs]]
+1. [[Boot Courses/C/Goals of the Course|Goals of the Course]]
+2. [[Boot Courses/C/History of C|History of C]]
+3. [[Boot Courses/C/Overview of C|Overview of C]]
+4. [[Boot Courses/C/Structure of a Simple Program|Structure of a Simple Program]]
+5. [[Boot Courses/C/Simple Types|Simple Types]]
+6. [[Boot Courses/C/Control Flow|Control Flow]]
+7. [[Boot Courses/C/Operators and Expressions|Operators and Expressions]]
+8. [[Boot Courses/C/Simple Functions|Simple Functions]]
+9. [[Boot Courses/C/Structs|Structs]]
 
 - Intro to Pointers
 - Structs
