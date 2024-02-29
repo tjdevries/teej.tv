@@ -44,41 +44,21 @@ Overarching Idea: I want to **expose** them to C, but I don't need them to **mas
 
 ## Course Outline:
 
-1. [[Boot Courses/C/Goals of the Course|Goals of the Course]]
-2. [[Boot Courses/C/History of C|History of C]]
-3. [[Boot Courses/C/Overview of C|Overview of C]]
-4. [[Boot Courses/C/Structure of a Simple Program|Structure of a Simple Program]]
-5. [[Boot Courses/C/Simple Types|Simple Types]]
-6. [[Boot Courses/C/Control Flow|Control Flow]]
-7. [[Boot Courses/C/Operators and Expressions|Operators and Expressions]]
-8. [[Boot Courses/C/Simple Functions|Simple Functions]]
-9. [[Boot Courses/C/Structs|Structs]]
+1. [[Goals of the Course]]
+2. [[History of C]]
+3. [[Overview of C]]
+4. [[Structure of a Simple Program]]
+5. [[Simple Types]]
+6. [[Control Flow]]
+7. [[Operators and Expressions]]
+8. [[Simple Functions]]
+9. [[Structs]]
 
-- Intro to Pointers
-- Structs
-	- Thinking it's nice to do this before pointers, because then we can show how you would update one and contrast that with something like javascript, where you're always passing the object "by reference".
-		- IBM uses "pass-by-pointer" instead of "pass-by-reference"
-		- https://www.ibm.com/docs/en/xl-c-aix/13.1.2?topic=calls-pass-by-pointer
-	- Pass by reference, pass by value
-		- Are there better C terms for this?
-- Arrays
-	- Fixed-size, at compile time
-	- `int hello[5] = {1, 2, 3, 4, 5}`
-		 - What happens if you access `hello[6]`?
-		 - What happens if you access `hello[5]`?
-		 - What happens if we try to set those?
-	 - (better) `int hello[] = {1, 2, 3, 4, 5}`
-- Strings (char array + null terminator)
-	- `char greeting[] = "hello, world!";`
-	- `char greeting[x] = "hello, world!";`
-		- STOP: What do you think `x` should be? :)
-	- `printf("%s", greeting);`
-	- Definitely want to show some of the stdlib string functions and some easy things that can make them fail
-		- `strncopy`
-	- Overflows
-		- `char greeting[256]`
-		- Someone inputs a 300 character string... uh oh :)
-		- memcpy into something that's not big enough
+(maybe [[casting.c]] goes here?)
+
+10. [[Pointers]]
+11. [[Arrays]]
+12. [[Strings]]
 - Pointer-Pointers (not sure if there is better name for this idea)
 	- Sometimes called 2-star pointers
 - Stack / Heap
