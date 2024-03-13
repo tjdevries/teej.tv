@@ -1,0 +1,6 @@
+- Infamous CVEs
+- Stepping stone to Go and Rust thoughts
+	- How can you take what you have learned here and apply this to writing and understanding Go & Rust.
+		- They both take a different approach to solving some of the problems that C most definitely has, especially for mere mortals like me.
+	- What does Go give you?
+	- What does Rust give you?

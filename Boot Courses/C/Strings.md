@@ -16,4 +16,16 @@
 
 - Examples:
 	- Put `\0` character in the middle of a string array
-	- [[string_examples.c]]
+	
+%% START CODE: [[string_examples.c]] %%
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  char nulled[] = "hello\0world";
+  printf("nulled: %s\n", nulled);
+  printf("strlen(nulled): %d\n", strlen(nulled));
+}
+```
+%% END CODE %%

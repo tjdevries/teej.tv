@@ -1,5 +1,23 @@
 #include <stdio.h>
 
+// Could add a large struct here
+
+int bigger_stack() {
+  int x = 7;
+  int y[100] = {0};
+  int z = 10;
+
+  return x + z;
+}
+
+int small_stack() {
+  int x = 7;
+  int y = 5;
+  return x * y;
+}
+
+// int variable_sized_thing(
+
 int main() {
   // This is bad, because it doesn't have a \0 at the end
   char bad[5] = "hello";

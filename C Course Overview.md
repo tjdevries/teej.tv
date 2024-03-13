@@ -1,47 +1,7 @@
-## Target Audience:
-- Boot.dev user
-- They've done:
-	- Some python
-	- basic data structures / algos
-	- some stuff w/ the terminal
-	- a few smaller personal projects
-	- (This course is planned to be between the JS and Go Courses)
-- Will be compiling almost exclusively in browser
-	- So focused more on language, rather than local computer setup/build/etc
-	- See more about why in the Goals section
-
-
-NOTE: My expectation is that most of the students will never write C again after the course and almost certainly not write C professionally.
-
-## Goals for the Course
-
-Overarching Idea: I want to **expose** them to C, but I don't need them to **master** C
-
-
-- This is not:
-	- a "Everything you need to be a professional C developer"
-	- a "Everything you need to build a C application"
-		- This includes compiler flags, build systems, etc
-	- a "You now can read random C projects easily"
-		- There are a lot of "C idioms" that are regularly used that are powerful but do not lend themselves to easy reading.
-- The primary goals are:
-	- You get a taste of a non-gc language (i.e. memory UN-safety)
-	- (The projects give you) a basic understanding of how a garbage collector works
-		- Or more broadly, just thinking about memory at all
-		- This is more likely to be a problem for people who have never written a non-GC lang
-	- (not how I want to say it) Learning C can help you understand and see its inspiration through many other popular programming languages (syntax/design/naming/etc)
- - Things I'm trying to avoid:
-	 - Idiosyncrasies about C that you would discover if you write a lot of C, but are not evident in simple programs
-	 - Not going to go deep into build systems (or maybe even cover more than as a mention)
-	 - Things like conditional compilation
-		 - Don't care about OS specific stuff or managing that kind of complexity in this course
-	 
-## Next steps after the course:
-- You either take:
-	- Go course
-	- Rust course
-	- (or both)
-
+---
+permalink: /c-course
+---
+Use [boot.dev/teej](boot.dev/teej) for 25% off :)
 ## Course Outline:
 
 1. [[Goals of the Course]]
@@ -53,17 +13,12 @@ Overarching Idea: I want to **expose** them to C, but I don't need them to **mas
 7. [[Operators and Expressions]]
 8. [[Simple Functions]]
 9. [[Structs]]
-
-(maybe [[casting.c]] goes here?)
-
 10. [[Pointers]]
 11. [[Arrays]]
 12. [[Strings]]
+13. [[Stack and Heap]]
 - Pointer-Pointers (not sure if there is better name for this idea)
 	- Sometimes called 2-star pointers
-- Stack / Heap
-	- Do we introduce this concept before we introduce malloc/free?
-	- Perhaps we introduce them at the same time?
 - Error Handling
 	- How to do "try-catch" in C?
 		- There is no language feature for this
@@ -77,27 +32,35 @@ Overarching Idea: I want to **expose** them to C, but I don't need them to **mas
 - Conclusion:
 	- Here's some things you could explore more if you liked this course
 		- Multithreading (if you don't value your sanity)
+- [[Closing Thoughts]]
+
+## Next steps after the course:
+- You either take:
+	- Go course
+	- Rust course
+	- (or both)
 
 
-- Open Questions:
-	- When should we do `enum` and `union` items?
-		- We definitely need them or the GC part
-	- When to include `#include` information? We need it basically right at the start to be able to start printing things, but it seems a bit early to explain.
-		- I don't love hand-waving things at the beginning. Perhaps we can just include it and explain line-by-line what is going on?
-		- I suppose that means we should mention c standard library as well. We'll definitely be referring to it when we do stuff with strings again
-	- nully-ifying vs actually freeing
-	- man pages
-	- gdb / valgrind / etc
-	- static / globals / const
-	- 10 rules of nasa
-	- bitwise operations
-	- How to read C types
-		- https://c-faq.com/decl/spiral.anderson.html
-	- RSS / virtual / reserved memory
-	- Talk about different types likes size_t, intpr_t, etc
-	- `typedef unsigned char byte`
-		- Using typedef outside of structs
-		- Could be good as an example compared to `#define`
+## Open Questions
+
+- When should we do `enum` and `union` items?
+	- We definitely need them or the GC part
+- When to include `#include` information? We need it basically right at the start to be able to start printing things, but it seems a bit early to explain.
+	- I don't love hand-waving things at the beginning. Perhaps we can just include it and explain line-by-line what is going on?
+	- I suppose that means we should mention c standard library as well. We'll definitely be referring to it when we do stuff with strings again
+- nully-ifying vs actually freeing
+- man pages
+- gdb / valgrind / etc
+- static / globals / const
+- 10 rules of nasa
+- bitwise operations
+- How to read C types
+	- https://c-faq.com/decl/spiral.anderson.html
+- RSS / virtual / reserved memory
+- Talk about different types likes size_t, intpr_t, etc
+- `typedef unsigned char byte`
+	- Using typedef outside of structs
+	- Could be good as an example compared to `#define`
 
 
 
