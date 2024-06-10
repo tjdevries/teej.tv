@@ -1359,6 +1359,7 @@ settings:
     --hex-sapphire: #209fb5;
     --hex-blue: #1e66f5;
     --hex-lavender: #7287fd;
+    --selection-background: #14dbe6;
 }
 
 .theme-dark.ctp-frappe {
@@ -1480,6 +1481,7 @@ settings:
     --hex-sapphire: #74c7ec;
     --hex-blue: #89b4fa;
     --hex-lavender: #b4befe;
+    --selection-background: #113bb4;
 }
 
 .theme-light,
@@ -1804,7 +1806,7 @@ h6,
 }
 
 ::selection {
-    color: var(--text-on-accent);
+    background-color: var(--selection-background, #14dbe6);
 }
 
 .cm-s-obsidian span.cm-error {
