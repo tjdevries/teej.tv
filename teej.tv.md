@@ -1,10 +1,13 @@
 ---
 permalink: /
 ---
+# `teej.tv`
+
 About Me:
 - Although I'm not a huge fan of the term "Content Creator" I have recently gone full-time on making content. You can find all the links below for that.
 
-I'm currently working on a course for [boot.dev](boot.dev/teej) which you can read more about here: [[C Course Overview]].
+I'm currently working on a course for [boot.dev](https://boot.dev/teej) which you can read more about here: [[courses/C/Outline]].
+- Don't forget to use promo code `TEEJ` for 25% off :)
 
 Links in Bio:
 - [teej_dv](https://youtube.com/@teej_dv): Primary channel with coherent content

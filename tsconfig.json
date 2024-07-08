@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"lib": [
+			"ES2015",
+			"DOM"
+		],
+		"noEmit": true
+	},
+	"include": [
+		"./**/*.js",
+		"./_/publish.d.ts"
+	]
+}

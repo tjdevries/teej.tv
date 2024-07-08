@@ -1,2 +1,0 @@
-- What every programmer should know about memory
-	- https://people.freebsd.org/~lstewart/articles/cpumemory.pdf

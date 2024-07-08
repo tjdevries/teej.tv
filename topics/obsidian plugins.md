@@ -1,0 +1,1 @@
+- Rubiinb: here are my top plugins for obsidian: "calendar", "obsidian-excalidraw-plugin", "obsidian-git", "cm-editor-syntax-highlight-obsidian", "obsidian-mind-map", "cmdr", "share-note", "obsidian-plugin-update-tracker", "better-word-count", "recent-files-obsidian", "obsidian-icon-folder", "obsidian-tasks-plugin"
